@@ -1,4 +1,4 @@
-import { deleteLinode } from '~/server/utils/linode';
+import { deleteLinode } from '../../utils/linode';
 
 export default defineEventHandler(async (event) => {
   const id = parseInt(event.context.params?.id || '0');

@@ -1,4 +1,4 @@
-import { bootLinode } from '~/server/utils/linode';
+import { bootLinode } from '../../../utils/linode';
 
 export default defineEventHandler(async (event) => {
   const id = parseInt(event.context.params?.id || '0');

@@ -1,5 +1,5 @@
-import { createLinode } from '~/server/utils/linode';
-import type { SupabaseConfig, EnvConfig } from '~/types/linode';
+import { createLinode } from '../../utils/linode';
+import type { SupabaseConfig, EnvConfig } from '../../../types/linode';
 import { randomBytes } from 'crypto';
 
 // Supabase setup stackscript - installs Docker and runs Supabase

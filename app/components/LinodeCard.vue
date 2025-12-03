@@ -67,7 +67,7 @@
       </div>
     </div>
     
-    <UDivider class="my-4" />
+    <USeparator class="my-4" />
     
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
       <div>

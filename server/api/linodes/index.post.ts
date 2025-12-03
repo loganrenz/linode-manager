@@ -1,5 +1,5 @@
-import { createLinode } from '~/server/utils/linode';
-import type { CreateLinodeRequest } from '~/types/linode';
+import { createLinode } from '../../utils/linode';
+import type { CreateLinodeRequest } from '../../../types/linode';
 
 export default defineEventHandler(async (event) => {
   const body = await readBody<CreateLinodeRequest>(event);

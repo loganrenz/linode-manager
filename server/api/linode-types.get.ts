@@ -1,4 +1,4 @@
-import { getLinodeTypes } from '~/server/utils/linode';
+import { getLinodeTypes } from '../utils/linode';
 
 export default defineEventHandler(async () => {
   const types = await getLinodeTypes();

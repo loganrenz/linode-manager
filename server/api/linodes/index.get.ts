@@ -1,4 +1,4 @@
-import { getLinodes } from '~/server/utils/linode';
+import { getLinodes } from '../../utils/linode';
 
 export default defineEventHandler(async () => {
   const linodes = await getLinodes();

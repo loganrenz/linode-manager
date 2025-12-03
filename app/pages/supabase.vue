@@ -48,7 +48,7 @@
             />
           </UFormField>
 
-          <UDivider label="Security (auto-generated if empty)" />
+          <USeparator label="Security (auto-generated if empty)" />
 
           <UFormField label="Postgres Password">
             <UInput
@@ -98,7 +98,7 @@
               </dl>
             </div>
 
-            <UDivider />
+            <USeparator />
 
             <div>
               <div class="flex items-center justify-between mb-2">

@@ -1,4 +1,4 @@
-import { shutdownLinode } from '~/server/utils/linode';
+import { shutdownLinode } from '../../../utils/linode';
 
 export default defineEventHandler(async (event) => {
   const id = parseInt(event.context.params?.id || '0');

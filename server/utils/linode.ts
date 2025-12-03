@@ -1,4 +1,4 @@
-import type { Linode, LinodeType, LinodeRegion, LinodeImage, CreateLinodeRequest, ApiResponse } from '~/types/linode';
+import type { Linode, LinodeType, LinodeRegion, LinodeImage, CreateLinodeRequest, ApiResponse } from '../../types/linode';
 
 const LINODE_API_BASE = 'https://api.linode.com/v4';
 

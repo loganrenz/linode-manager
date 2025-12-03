@@ -31,7 +31,11 @@
             >
               Supabase
             </UButton>
-            <UColorModeButton />
+            <UButton
+              variant="ghost"
+              :icon="colorModeIcon"
+              @click="toggleColorMode"
+            />
           </nav>
         </div>
       </header>
@@ -46,3 +50,15 @@
     </UContainer>
   </div>
 </template>
+
+<script setup lang="ts">
+const colorMode = useColorMode();
+
+const colorModeIcon = computed(() => 
+  colorMode.value === 'dark' ? 'i-heroicons-sun' : 'i-heroicons-moon'
+);
+
+function toggleColorMode() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
+}
+</script>
