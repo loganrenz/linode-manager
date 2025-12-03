@@ -1,0 +1,15 @@
+import { bootLinode } from '../../../utils/linode';
+
+export default defineEventHandler(async (event) => {
+  const id = parseInt(event.context.params?.id || '0');
+  
+  if (!id) {
+    throw createError({
+      statusCode: 400,
+      message: 'Invalid Linode ID'
+    });
+  }
+  
+  await bootLinode(id);
+  return { success: true, message: `Linode ${id} boot initiated` };
+});
